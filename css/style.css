@@ -1,0 +1,392 @@
+/* ============================= */
+/* GENERAL RESET */
+/* ============================= */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.with-navbar {
+    padding-top: 80px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* ============================= */
+/* BACKGROUNDS */
+/* ============================= */
+.home-bg {
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-bg {
+    background: url('../assets/bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.dashboard-bg {
+    background: url('../assets/bg3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* OVERLAYS */
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dashboard-overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.navbar, .custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    padding: 8px 15px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #ddd !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.logo-highlight {
+    color: #ffc107;
+}
+
+.dashboard-bg .main-content {
+    margin-top: 75px;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.hero-quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #f8d210;
+    margin-top: 15px;
+}
+
+.hero-tagline {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.hero-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,123,255,0.5);
+}
+
+/* ============================= */
+/* PAGE SECTIONS */
+/* ============================= */
+.page-section {
+    padding: 80px 0;
+}
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* TABLE FIX */
+/* ============================= */
+.table {
+    width: 100%;
+    font-size: 14px;
+}
+
+.table th,
+.table td {
+    white-space: nowrap;
+    padding: 10px 15px;
+}
+
+.table-card {
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* ============================= */
+/* PLAN COLORS */
+/* ============================= */
+.basic {
+    background-color: #d4edda;
+}
+
+.standard {
+    background-color: #cce5ff;
+}
+
+.premium {
+    background: linear-gradient(135deg, #fff3cd, #ffe08a);
+    border: 1px solid #ffd700;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* FORM CARD */
+/* ============================= */
+.form-card {
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+    padding: 25px 20px;
+    border-radius: 14px;
+    background: #1f1f1f;
+    border: 1px solid #2f2f2f;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+}
+
+.form-card h3,
+.form-card label,
+.form-card h5 {
+    color: #fff;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+    padding: 9px 10px;
+    margin-bottom: 12px;
+    transition: 0.2s ease;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+    color: #aaa;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 6px rgba(255, 107, 107, 0.4);
+    outline: none;
+}
+
+.form-card .btn-primary {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.form-card .btn-primary:hover {
+    background: #ff4c4c;
+}
+
+/* ============================= */
+/* DASHBOARD CARDS */
+/* ============================= */
+.dashboard-card {
+    border-radius: 15px;
+    padding: 25px;
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.dashboard-card p {
+    opacity: 0.8;
+    margin: 0;
+}
+
+.card-blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+}
+
+.card-green {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+}
+
+.card-red {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+}
+
+.card-yellow {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+}
+
+/* ============================= */
+/* ACTION PANEL */
+/* ============================= */
+.action-panel {
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+.action-panel .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.action-panel .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero-subtitle,
+    .hero-tagline,
+    .hero-quote {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .page-section {
+        padding: 40px 0;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .dashboard-bg .main-content {
+        margin-top: 95px;
+    }
+
+    .with-navbar {
+        padding-top: 95px;
+    }
+}
