@@ -119,6 +119,10 @@ Start:
 Visit:
 http://localhost/Gym-Management-System
 
+📸 Screenshots
+### 📸 Project Screenshots
+For a quick visual overview of the system’s interface and features, please check the **/assets/images** folder in this repository. 
+
 
 🎯 Learning Outcomes
 This project demonstrates:
