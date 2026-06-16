@@ -89,35 +89,36 @@ admin123
 This is a demonstration account created for portfolio evaluation.
 
 ⚙️ Installation
-1. Clone Repository
-git clone https://github.com/yourusername/Gym-Management-System.git
+Clone the Repository
 
-2. Move Project
-Copy the project folder into:
-xampp/htdocs/
-or
-www/
-depending on your local server.
+git clone https://github.com/ajit0109/vyomrafitness.git
+Move Project
+Copy the project folder into your local server's root directory:
 
-3. Import Database
-Open phpMyAdmin
-Create a database
-Import the provided SQL file
+XAMPP: xampp/htdocs/
 
-4. Configure Database
-Update database credentials inside the configuration file.
-Example:
-$host="localhost";
-$user="root";
-$password="";
-$database="gym";
 
-5. Run Project
-Start:
-Apache
-MySQL
-Visit:
-http://localhost/Gym-Management-System
+Import Database
+
+Open phpMyAdmin in your browser (usually http://localhost/phpmyadmin).
+
+Create a new database named gym.
+
+Click on the Import tab and upload the .sql file located in the /database folder of this project.
+
+Configure Database
+Update your database credentials inside your configuration file (e.g., includes/db.php or whichever file handles your connection):
+
+PHP
+$host = "localhost";
+$user = "root";
+$password = ""; // Use your MySQL password if you have one set
+$database = "gym";
+Run the Project
+
+Ensure Apache and MySQL are running in your XAMPP/WAMP Control Panel.
+
+Open your browser and visit: http://localhost/vyomrafitness
 
 📸 Screenshots
 ### 📸 Project Screenshots
